@@ -46,9 +46,9 @@ from employees;
 /*************************
 group by 절
 **************************/
-select avg(salary), deparyment_id
+select  avg(salary), 
+        department_id
 from employees
 group by department_id;
-
 
 

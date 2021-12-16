@@ -50,8 +50,10 @@ select employee_id,
        email,
        hire_date
 from employees;
+
 SELECT first_name || last_name
 FROM employees;
+
 select employee_id as empNo,
        first_name "f-name",
        salary "Salary" -->대소문자 구분,공백,특수문자 등 필요한 경우 쌍따옴표붙여서 "연  봉" 가능
