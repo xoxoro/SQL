@@ -60,7 +60,13 @@ where department_id in (10,90,100);
 select  first_name,
         salary
 from employees
-where first_name like lower('%S%');
+where first_name like lower('%s%');
+
+select  first_name,
+        salary
+from employees
+where first_name like upper('%S%');
+
 --initcap은 각 단어의 첫 글자를 대문자로 나머지는 소문자로 변환한다.
 
 select  first_name, 
