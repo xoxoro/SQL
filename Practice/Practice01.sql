@@ -61,6 +61,12 @@ select  first_name,
         salary
 from employees
 where first_name like lower('%S%');
+
+select  first_name, 
+        salary 
+from employees
+where upper(first_name) like '%S%' ;
+--왜 lower은 불가한건지
 --initcap은 각 단어의 첫 글자를 대문자로 나머지는 소문자로 변환한다.
 
 --문제8.
