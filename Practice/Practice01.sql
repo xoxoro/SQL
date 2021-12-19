@@ -59,14 +59,13 @@ select  first_name,
         salary
 from employees
 where first_name like lower('%S%');
---initcap은 왜 안돼
+--initcap은 각 단어의 첫 글자를 대문자로 나머지는 소문자로 변환한다.
 
 --문제8.
 --전체 부서를 출력하려고 합니다. 순서는 부서이름이 긴 순서대로 출력해 보세오
 select *
 from departments
-order by length(department_name) asc;
-
+order by department_name asc);
 
 --문제9.
 --(정확하지 않지만, 지사가 있을 것으로 예상되는 나라들을) 나라이름을 대문자로 출력하고
