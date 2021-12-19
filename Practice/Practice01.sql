@@ -41,6 +41,8 @@ select  first_name,
         salary,
         NVL(commission_pct,0)
 from employees
+where salary < 14000
+and salary >= 10000
 order by salary desc;
   
 --문제6        
