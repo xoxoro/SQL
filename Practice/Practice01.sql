@@ -62,6 +62,7 @@ select  first_name,
 from employees
 where first_name like lower('%S%');
 --initcap은 각 단어의 첫 글자를 대문자로 나머지는 소문자로 변환한다.
+
 select  first_name, 
         salary 
 from employees
@@ -71,7 +72,7 @@ where upper(first_name) like '%S%' ;
 select  first_name, 
         salary 
 from employees
-where lower(first_name) like '%S%' ;
+where lower(first_name) like '%s%' ;
 --lower은 문자열을 소문자로 변환
 
 --문제8.
