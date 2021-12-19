@@ -66,12 +66,13 @@ select  first_name,
         salary 
 from employees
 where upper(first_name) like '%S%' ;
+--upper은 문자열을 대문자로 변환
 
 select  first_name, 
         salary 
 from employees
 where lower(first_name) like '%S%' ;
---왜 lower은 불가한건지
+--lower은 문자열을 소문자로 변환
 
 --문제8.
 --전체 부서를 출력하려고 합니다. 순서는 부서이름이 긴 순서대로 출력해 보세오
