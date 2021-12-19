@@ -84,3 +84,4 @@ select  first_name 이름,
         hire_date 입사일
 from employees
 where hire_date > '03/12/31';
+
