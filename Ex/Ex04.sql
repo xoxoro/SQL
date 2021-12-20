@@ -42,7 +42,7 @@ select  employee_id,
         end  Bonus
 from employees;
 
---DECODE()
+--DECODE() '같으면'만 가능
 select  employee_id,
         salary,
         decode( job_id,'AC_ACCOUNT', salary+salary*01,
