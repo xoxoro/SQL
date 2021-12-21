@@ -186,3 +186,22 @@ from employees
 where salary >all ( select salary
                     from employees
                     where department_id=110);
+        
+----------------------------------------------                    
+ select *
+from employees , (select department_id,
+                         max(salary) salary
+                  from employees
+                  group by department_id);
+                  
+select  em.first_name,
+        em.salary,
+        em.department_id,
+        ms.department_id,
+        ms.salary
+from employees em, (select department_id,
+                         max(salary) salary
+                  from employees
+                  group by department_id) ms
+where em.department_id = ms.department_id
+and em.salary = ms.salary;
