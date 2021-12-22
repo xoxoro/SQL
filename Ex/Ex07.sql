@@ -205,3 +205,4 @@ from employees em, (select department_id,
                   group by department_id) ms
 where em.department_id = ms.department_id
 and em.salary = ms.salary;
+
