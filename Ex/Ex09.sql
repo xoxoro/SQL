@@ -94,3 +94,5 @@ from dual;
 select seq_quthor_id.nextval
 from dual;
 
+
+
