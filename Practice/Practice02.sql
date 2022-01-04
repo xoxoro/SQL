@@ -50,3 +50,4 @@ from employees
 group by job_id
 having min(salary) >= 2500
 order by min(salary) desc, max(salary) asc;
+
